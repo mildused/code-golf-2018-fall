@@ -46,11 +46,11 @@ Fork this GitHub repository, and just copy and paste your repository link [here]
 * get.ridOfThatExtraDot.cpp
 * .filename.txt
 
-### Questions
+## Questions
 
-#### 1) ASCII Art
+### 1) ASCII Art
 
-Print the following ASCII art:
+#### Print the following ASCII art:
 
 ```ascii
  / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \__/ / __ \ \_
@@ -77,8 +77,8 @@ Print the following ASCII art:
 / /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \__
 ```
 
-#### 2) Printing Integers
-Print all integers (one per line) between 0 and 999,999 (do not include 0 or 999,999) that have the same first and last digit, and are divisible by 3, 5, or 7.
+### 2) Printing Integers
+#### Print all integers (one per line) between 0 and 999,999 (do not include 0 or 999,999) that have the same first and last digit, and are divisible by 3, 5, or 7.
 
 - Sample output:
 ```
@@ -91,8 +91,8 @@ Print all integers (one per line) between 0 and 999,999 (do not include 0 or 999
 
 ```
 
-#### 3) k-th largest
-Given a list of numbers and an `k` such that `1 <= k <= length of list`, find the kth largest unique element. 
+### 3) k-th largest
+#### Given a list of numbers and an `k` such that `1 <= k <= length of list`, find the kth largest unique element. 
 - Note the list may not be sorted and may have duplicates.
 
 - Input format:
@@ -127,8 +127,8 @@ k           # k
 0
 ```
 
-#### 4) Unique names
-Given a list of names, print the longest set of names in which no name shares a character with any other name in the set at the same index. You can ignore case.
+### 4) Unique names
+#### Given a list of names, print the longest set of names in which no name shares a character with any other name in the set at the same index. You can ignore case.
 
 - Input format:
 ```
@@ -152,11 +152,11 @@ Dan Dylan Wyatt  #
 Dan Wyatt        #  Dan and Dylan both have 'd' at index 0, and Dylan and Wyatt both have 'y' at index 1, so {Dan, Wyatt} is the largest set that does not share characters at the same vertex
 ```
 
-#### 5) CS Universities
-Print the names of all universities in the United States (1 per line and no abbreviations) that have at least 7,000 undergraduate students and offer Computer Science majors.
+### 5) CS Universities
+#### Print the names of all universities in the United States (1 per line and no abbreviations) that have at least 7,000 undergraduate students and offer Computer Science majors.
 
-#### 6) Largest Convex Polygon
-Given a list of coordinate pairs, return the longest sequence of points that can be connected in a loop, without any of the connecting lines intersecting, and such that the resulting polygon is convex. Give the output in clockwise order.
+### 6) Largest Convex Polygon
+#### Given a list of coordinate pairs, return the longest sequence of points that can be connected in a loop, without any of the connecting lines intersecting, and such that the resulting polygon is convex. Give the output in clockwise order.
 
 - Input format:
 ```
