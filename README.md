@@ -77,98 +77,106 @@ Print the following ASCII art:
 / /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \____/ /  \ \__
 ```
 
-#### 2) Given a grid of 0's and 1's, count the number of 1's between the rectangle formed by the given coordinates
-- Coordinates are 0 based indices and inclusive
-- *Warning*: the grid can be large
-- Example input
-```
-R C               # length of the rows and columns of the grid
-N                 # number of test cases
-X_1 Y_1 X_2 Y_2   # coordinates per test case
-...
-```
-```
-5 12
-0 1 0 0 0 1 0 1 1 0 0 0
-0 0 0 0 0 1 0 0 1 0 1 1
-0 1 0 0 0 1 1 1 1 1 1 0
-0 1 0 0 0 1 0 0 0 1 0 1
-1 0 0 1 1 0 0 0 1 0 0 0
-3
-0 0 4 11
-0 1 4 1
-0 1 2 5
-```
+#### 2) Printing Integers
+Print all integers (one per line) between 0 and 999,999 (do not include 0 or 999,999) that have the same first and last digit, and are divisible by 3, 5, or 7.
 
-- Example output:
+- Sample output:
 ```
-23
 3
 5
+7
+9
+33
+...
+
 ```
 
-#### 3) Today, the Alumni Association tabled at Sarratt Promenade and gave out Chick-Fil-A sandwiches "while supplies last"ed. Fortunately, before the event we discovered how many sandwiches were ordered. Given the order in which students arrived, we want to know how long the line is at a certain time and how many sandiwches are left at that time.
-
-- Additional specifications
-    - It is not possible to receive a sandwich until after interacting with someone from the Alumni Association. Since the time spent talking to someone from the Alumni Association is related to a student's year, the following are interaction times for each class.
-        - 1 (Freshman):     1 minute
-        - 2 (Sophomore):    2 minutes
-        - 3 (Junior):       4 minutes
-        - 4 (Senior):       9 minutes
-    - Once sandwiches run out, all students leave the line.
-    - Time starts at 0
+#### 3) k-th largest
+Given a list of numbers and an `k` such that `1 <= k <= length of list`, find the kth largest unique element. 
+- Note the list may not be sorted and may have duplicates.
 
 - Input format:
 ```
-T               # number of test cases
-C               # count of sandwiches
-S               # number of students
-t_i class       # S lines of time and class
-I               # Output line length and remaining sandwich count at time I
+T           # number of test cases
+L           # list of numbers with spaces in between
+k           # k
 ```
 
 - Example input:
 ```
-1               # 1 test case
-1               # 1 sandwich
-1               # 1 student
-0 1             # Student comes at t=0 and class = 1 (freshman)
-0               # Time to output
+1                  # 1 test case
+0 3 6 2 4 3 3 7 6  # list of numbers
+5                  # k
 ```
 - Example output:
-``` 
-1 1            # The line is 1 minute long and there is 1 sandwich at time 0
+```
+2
 ```
 
 - Example input:
 ```
-2               # 2 sets of test cases
-5               # 1st TC
-3             
-1 1
-2 2
-3 4
-3               # Print line length & sandwich count at t=3
-1               # 2nd TC
-3
-4 2
-6 2
-7 3
-8               # Print line length & sandwich count at t=8
+2                             # 2 test cases
+3.14159 -1000 999999999 3.14  # list
+3                             # k
+0 0 0 0 0 0 1 -1 0 0 0 0 0 0  # list
+2                             # k
 ```
 - Example output:
 ```
-10 4            # 10 minute long line and 4 sandwiches remaining (A student received a sandwich after t=1, and 2 more in line)
-3 1             # One received a sandwich after t=5, one received a sandwich after t=7, last person has been in line for 1 minute
+3.14
+0
 ```
 
-Plug
+#### 4) Unique names
+Given a list of names, print the longest set of names in which no name shares a character with any other name in the set at the same index. You can ignore case.
+
+- Input format:
 ```
-With VUconnect, you can:
-·         Network with over 135,000 alumni worldwide
-·         Get alumni advice for internships, jobs, and graduate school
-·         Access the Alumni Career Adviser Network
-·         Find Alumni Chapters - to network in your hometown/where you'd like to move after graduation
- 
+T         # number of test cases
+L         # list of names separated by spaces
+```
+- Output format:
+```
+Name1 Name2 Name3 Name4          # List corresponding to the first test case
+OtherName1 OtherName2 OtherName3 # List corresponding to the second test case
+...
 ```
 
+- Example input:
+```
+1                # one test case
+Dan Dylan Wyatt  #
+```
+- Example output:
+```
+Dan Wyatt        #  Dan and Dylan both have 'd' at index 0, and Dylan and Wyatt both have 'y' at index 1, so {Dan, Wyatt} is the largest set that does not share characters at the same vertex
+```
+
+#### 5) CS Universities
+Print the names of all universities in the United States (1 per line and no abbreviations) that have at least 7,000 undergraduate students and offer Computer Science majors.
+
+#### 6) Largest Convex Polygon
+Given a list of coordinate pairs, return the longest sequence of points that can be connected in a loop, without any of the connecting lines intersecting, and such that the resulting polygon is convex. Give the output in clockwise order.
+
+- Input format:
+```
+T                     # number of test cases
+x1 y1 x2 y2 x3 y3 ... # list of coordinates
+...
+```
+- Output format:
+```
+x1 y1 x2 y2 x3 y3 ... # list of coordinates for test case 1
+x1 y1 x2 y2 x3 y3 ... # list of coordinates for test case 2
+...
+```
+
+- Example input:
+```
+1
+0 0 0 1 1 1 1 0 0 1 2 2 1
+```
+- Example output:
+```
+0 0 0 1 1 2 2 1 1 0
+```
