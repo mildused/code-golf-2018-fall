@@ -80,7 +80,7 @@ Fork this GitHub repository, and just copy and paste your repository link [here]
 ### 2) Printing Integers
 #### Print all integers (one per line) between 0 and 999,999 (do not include 0 or 999,999) that have the same first and last digit, and are divisible by 3, 5, or 7.
 
-- Sample output:
+- Example output:
 ```
 3
 5
@@ -152,11 +152,19 @@ Dan Dylan Wyatt  #
 Dan Wyatt        #  Dan and Dylan both have 'd' at index 0, and Dylan and Wyatt both have 'y' at index 1, so {Dan, Wyatt} is the largest set that does not share characters at the same vertex
 ```
 
-### 5) CS Universities
-#### Print the names of all universities in the United States (1 per line and no abbreviations) that have at least 7,000 undergraduate students and offer Computer Science majors.
+### 5) TN Universities
+#### Print the names of all universities and colleges in Tennessee (1 per line and no abbreviations). The universities should be printed in order of the number of students, from largest to smallest.
 
-### 6) Largest Convex Polygon
-#### Given a list of coordinate pairs, return the longest sequence of points that can be connected in a loop, without any of the connecting lines intersecting, and such that the resulting polygon is convex. Give the output in clockwise order.
+- Example output:
+```
+University of Tennessee: Knoxville
+Middle Tennessee State University
+University of Memphis
+...
+```
+
+### 6) Smallest Polygon
+#### Given a list of coordinate pairs, return the shortest sequence of points that can be connected in a loop, and such that the resulting polygon encloses all remaining points. Give the output in clockwise order, starting with the point closest to (0, 0). 
 
 - Input format:
 ```
@@ -174,9 +182,9 @@ x1 y1 x2 y2 x3 y3 ... # list of coordinates for test case 2
 - Example input:
 ```
 1
-0 0 0 1 1 1 1 0 0 1 2 2 1
+1 1 2 3 3 1 2 2
 ```
 - Example output:
 ```
-0 0 0 1 1 2 2 1 1 0
+1 1 2 3 3 1
 ```
